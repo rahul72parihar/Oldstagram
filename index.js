@@ -57,10 +57,10 @@ bodyEl.innerHTML=message;
 function change(a){
     let b = "like"+a
     const btn = document.getElementById(b);
+    console.log(btn.src);
     b="noOfLikes"+a
     const box = document.getElementById(b);
-    console.log(box);
-    if(btn.src=="https://cw15.scrimba.com/images/icon-heart.png"){
+    if(btn.src=="/images/icon-heart.png"){
         btn.src = "images/likespink.png";
         posts[a].likes++
         
