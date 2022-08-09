@@ -6,8 +6,8 @@ const posts = [
         location: "Zundert, Netherlands",
         avatar: "images/avatar-vangogh.jpg",
         post: "images/post-vangogh.jpg",
-        comment: "just took a few mushrooms lol",
-        likes: 21
+        comment: "I put my heart and my soul into my work, and have lost my mind in the process",
+        likes: 223
     },
     {
         name: "Gustave Courbet",
@@ -16,7 +16,7 @@ const posts = [
         avatar: "images/avatar-courbet.jpg",
         post: "images/post-courbet.jpg",
         comment: "i'm feelin a bit stressed tbh",
-        likes: 4
+        likes: 998
     },
         {
         name: "Joseph Ducreux",
