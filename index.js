@@ -43,7 +43,7 @@ for(let i = 0; i<posts.length; i++){
             <img src = "${curr.post}" class = "post" alt="image posted by creator">
             </div>
             <div class = "container ">
-                <img src="images/icon-heart.png" class = "icons" alt="like" id = "like${i}"             onclick="change(${i})">
+                <img src="images/icon-heart.png" class = "icons" alt="like" id = "like${i}"  ondblclick="change(${i})">
                 <img src="images/icon-comment.png" class = "icons" alt="comment">
                 <img src="images/icon-dm.png" class = "icons" alt="send">
                 <p class = "bold comment"><span id = "noOfLikes${i}">${curr.likes}</span> likes</p>
@@ -57,12 +57,6 @@ bodyEl.innerHTML=message;
 function change(a){
     let b = "like"+a
     const btn = document.getElementById(b);
-    console.log("src -> ");
-    console.log(btn.src);
-    console.log("is equal 3");
-    console.log(btn.src==="https://rahul72parihar.github.io/Oldstagram/images/icon-heart.png");
-    console.log("is equal 2");
-    console.log(btn.src=="https://rahul72parihar.github.io/Oldstagram/images/icon-heart.png");
     b="noOfLikes"+a
     const box = document.getElementById(b);
     if(btn.src=="https://rahul72parihar.github.io/Oldstagram/images/icon-heart.png"){
