@@ -57,13 +57,17 @@ bodyEl.innerHTML=message;
 function change(a){
     let b = "like"+a
     const btn = document.getElementById(b);
+    console.log("src -> ")
     console.log(btn.src);
+    console.log("is equal 3");
+    console.log(btn.src==="https://rahul72parihar.github.io/Oldstagram/images/icon-heart.png")
+    console.log("is equal 2");
+    console.log(btn.src=="https://rahul72parihar.github.io/Oldstagram/images/icon-heart.png")
     b="noOfLikes"+a
     const box = document.getElementById(b);
     if(btn.src=="https://rahul72parihar.github.io/Oldstagram/images/icon-heart.png"){
         btn.src = "images/likespink.png";
         posts[a].likes++
-        
     }
     else{
         btn.src ="images/icon-heart.png"
