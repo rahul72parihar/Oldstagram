@@ -30,7 +30,8 @@ section{
     margin-bottom: 10px;
 }
 .container{
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin: 0 auto;
 }
 

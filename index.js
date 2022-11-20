@@ -40,7 +40,7 @@ for(let i = 0; i<posts.length; i++){
                         <p >${curr.location}</p>
                     </div>
                 </div>
-            <img src = "${curr.post}" class = "post" alt="image posted by creator">
+            <img src = "${curr.post}" class = "post" alt="image posted by creator" ondblclick="change(${i})">
             </div>
             <div class = "container ">
                 <img src="images/icon-heart.png" class = "icons" alt="like" id = "like${i}"  ondblclick="change(${i})">
@@ -56,12 +56,14 @@ bodyEl.innerHTML=message;
 
 function change(a){
     let b = "like"+a
-    const btn = document.getElementById(b);
+    const btn = document.getElementById(b)
     b="noOfLikes"+a
-    const box = document.getElementById(b);
-    if(btn.src=="https://rahul72parihar.github.io/Oldstagram/images/icon-heart.png"){
+    const box = document.getElementById(b)
+    console.log("source -> "+btn.src)
+    if(btn.src=="images/icon-heart.png"){
         btn.src = "images/likespink.png";
         posts[a].likes++
+        console.log("clicked")
     }
     else{
         btn.src ="images/icon-heart.png"
