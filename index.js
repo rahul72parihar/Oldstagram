@@ -60,7 +60,7 @@ function change(a){
     b="noOfLikes"+a
     const box = document.getElementById(b)
     console.log("source -> "+btn.src)
-    if(btn.src=="images/icon-heart.png"){
+    if(btn.src.includes("icon")){
         btn.src = "images/likespink.png";
         posts[a].likes++
         console.log("clicked")
